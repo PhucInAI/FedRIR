@@ -25,13 +25,15 @@ To address these limitations, we define feature sensitivity in the evaluation of
 
 ### Preparation
 
-Before executing the project code, please prepare the Python environment according to the `requirement.txt` file. We set up the environment with `python 3.8` and `torch 1.8.1`. 
+Before executing the project code, please prepare the Python environment according to the `requirement.txt` file. We set up the environment with `python 3.9.12` and `torch 2.0.0`. 
 
+```python
+pip install -r requirement.txt
+```
 
 ### How to run
-**Coming soon**
 
-<!-- **1. Federated Model Training**
+**1. Federated Model Training**
 
 Default ResNet-18 model for image datasets and a fully-connected neural network linear model for tabular datasets.
 
