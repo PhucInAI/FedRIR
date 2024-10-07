@@ -38,16 +38,16 @@ pip install -r requirement.txt
 Default ResNet-18 model for image datasets and a fully-connected neural network linear model for tabular datasets.
 
 ```python
-python fl_training_main.py -train_method baseline -train_mode backdoor -dataset Cifar10 \ 
--global_epochs 100 -local_epochs 10 -batch_size 128 -lr 0.0001  -client_num 10 -frac 0.2 -client_perc 0.1 -save_model True  
+python fl_training_main.py -train_mode sensitive -dataset Celeba -global_epochs 100 -local_epochs 10 -batch_size 128 -lr 0.0001  -client_num 10 -frac 0.2 -client_perc 0.1 -save_model True  
 ```
 
 **2. Federated Feature Unlearning**
 
 ```python
-python unlearn_main.py -unlearning_scenario backdoor -client_perc 0.1 -dataset Cifar10 \ 
--sample_number 20 -min_sigma 0.05 -max_sigma 1.0 -batch_size 128 -lr 0.0001 -save_model True
+python unlearn_main.py -unlearning_scenario sensitive -dataset Celeba -pertubbed_part "mouth" -sample_number 20 -min_sigma 0.05 -max_sigma 1.0 -batch_size 128 -lr 0.0001 -save_model True
 ```
+
+- To achieve optimal feature unlearning results, adjust hyperparameters like `lr` and `batch_size`, as they may slightly vary across different unlearning scenarios and datasets.
 
 ## Citation
 If you find this work useful for your research, please cite
