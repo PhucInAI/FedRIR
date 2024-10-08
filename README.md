@@ -1,13 +1,18 @@
 # Federated Feature Unlearning
 
-[ArXiv](https://arxiv.org/abs/2405.17462) 
+[ArXiv](https://arxiv.org/abs/2405.17462) | Supplementary Material
 
-### Official pytorch implementation of the paper:
+### Official pytorch implementation of the paper: "Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity"
 
-- **Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity**
+#### NeurIPS 2024
+
+### (Released on October 08, 2024)
+
+[![Paper](https://img.shields.io/badge/cs.CV-arxiv:2312.05849-B31B1B.svg)]((https://arxiv.org/abs/2405.17462))
+[![Page Views Count](https://badges.toozhao.com/badges/01J9P2R033FHASG7RVP6QSTE3P/green.svg)](https://badges.toozhao.com/stats/01J9P2R033FHASG7RVP6QSTE3P "Get your own page views count badge on badges.toozhao.com")
 
 
-## Description
+## Introduction
 
 The advent of Federated Learning (FL) highlights the practical necessity for the 'right to be forgotten' for all clients, allowing them to request data deletion from the machine learning model's service provider. This necessity has spurred a growing demand for Federated Unlearning (FU). Feature unlearning has gained considerable attention due to its applications in unlearning sensitive features, backdoor features, and bias features. 
 
@@ -55,14 +60,17 @@ If you find this work useful for your research, please cite
 @article{ferrari,
       title={Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity}, 
       author={Hanlin Gu and WinKent Ong and Chee Seng Chan and Lixin Fan},
+      journal={Advances in Neural Information Processing Systems},
       year={2024},
-      eprint={2405.17462},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2405.17462}, 
 }
 ```
 
 ## Feedback
 Suggestions and opinions on this work (both positive and negative) are greatly welcomed. Please contact the author by sending an email to
-`winkent.ong@um.edu.my`.
+`winkent.ong@um.edu.my` or `cs.chan at um.edu.my`
+
+# License and Copyright
+
+The project is open source under BSD-3 license (see the `LICENSE` file).
+
+©2024 Universiti Malaya.
