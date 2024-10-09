@@ -1,6 +1,6 @@
 # Federated Feature Unlearning
 
-[ArXiv](https://arxiv.org/abs/2405.17462) | Supplementary Material
+[ArXiv](https://arxiv.org/abs/2405.17462) | Supplementary Material | Poster
 
 ### Official pytorch implementation of the paper: "Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity"
 
