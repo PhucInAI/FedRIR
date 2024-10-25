@@ -42,13 +42,13 @@ pip install -r requirement.txt
 Default ResNet-18 model for image datasets and a fully-connected neural network linear model for tabular datasets.
 
 ```python
-python fl_training_main.py -train_mode sensitive -dataset Celeba -global_epochs 100 -local_epochs 10 -batch_size 128 -lr 0.0001  -client_num 10 -frac 0.2 -client_perc 0.1 -save_model True  
+python fl_training_main.py -train_mode sensitive -dataset Celeba -global_epochs 100 -local_epochs 10 -batch_size 128 -lr 0.0001  -client_num 10 -frac 0.2 -report_training -save_model 
 ```
 
 **2. Federated Feature Unlearning**
 
 ```python
-python unlearn_main.py -unlearning_scenario sensitive -dataset Celeba -pertubbed_part "mouth" -sample_number 20 -min_sigma 0.05 -max_sigma 1.0 -lr 0.0001 -batch_size 128 -save_model True
+python unlearn_main.py -unlearning_scenario sensitive -dataset Celeba -pertubbed_part "mouth" -sample_number 20 -min_sigma 0.05 -max_sigma 1.0 -lr 0.00001 -batch_size 128 -n_epochs 1 -save_model 
 ```
 
 - To achieve optimal feature unlearning results, adjust hyperparameters like `lr`, as they may slightly vary across different unlearning scenarios and datasets.
@@ -56,11 +56,11 @@ python unlearn_main.py -unlearning_scenario sensitive -dataset Celeba -pertubbed
 ## Citation
 If you find this work useful for your research, please cite
 ```bibtex
-@article{ferrari,
-      title={Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity}, 
-      author={Hanlin Gu and WinKent Ong and Chee Seng Chan and Lixin Fan},
-      journal={Advances in Neural Information Processing Systems},
-      year={2024},
+@inproceedings{ferrari,
+               title={Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity}, 
+               author={Hanlin Gu and WinKent Ong and Chee Seng Chan and Lixin Fan},
+               journal={Advances in Neural Information Processing Systems},
+               year={2024},
 }
 ```
 
