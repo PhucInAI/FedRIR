@@ -25,33 +25,7 @@ To address these limitations, we define feature sensitivity in the evaluation of
 <p align="center"> <img src="images/feature_sensivity.gif" alt="Feature Sensitivity" style="zoom: 50%" />
 <p align="center"> Figure 2: Illustration demonstrating the optimization of feature sensitivity for achieving feature unlearning. </p>
 
-## Getting started
-
-### Preparation
-
-Before executing the project code, please prepare the Python environment according to the `requirement.txt` file. We set up the environment with `python 3.9.12` and `torch 2.0.0`. 
-
-```python
-pip install -r requirement.txt
-```
-
-### How to run
-
-**1. Federated Model Training**
-
-Default ResNet-18 model for image datasets and a fully-connected neural network linear model for tabular datasets.
-
-```python
-python fl_training_main.py -train_mode sensitive -dataset Celeba -global_epochs 100 -local_epochs 10 -batch_size 128 -lr 0.0001  -client_num 10 -frac 0.2 -report_training -save_model 
-```
-
-**2. Federated Feature Unlearning**
-
-```python
-python unlearn_main.py -unlearning_scenario sensitive -dataset Celeba -pertubbed_part "mouth" -sample_number 20 -min_sigma 0.05 -max_sigma 1.0 -lr 0.00001 -batch_size 128 -n_epochs 1 -save_model 
-```
-
-- To achieve optimal feature unlearning results, adjust hyperparameters like `lr`, as they may slightly vary across different unlearning scenarios and datasets.
+## Coming Soon
 
 ## Citation
 If you find this work useful for your research, please cite
