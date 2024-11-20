@@ -25,8 +25,6 @@ To address these limitations, we define feature sensitivity in the evaluation of
 <p align="center"> <img src="images/feature_sensivity.gif" alt="Feature Sensitivity" style="zoom: 50%" />
 <p align="center"> Figure 2: Illustration demonstrating the optimization of feature sensitivity for achieving feature unlearning. </p>
 
-## Coming Soon
-
 ## Citation
 If you find this work useful for your research, please cite
 ```bibtex
