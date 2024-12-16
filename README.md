@@ -38,7 +38,7 @@ If you find this work useful for your research, please cite
 
 ## Feedback
 Suggestions and opinions on this work (both positive and negative) are greatly welcomed. Please contact the author by sending an email to
-`winkent.ong@um.edu.my` or `cs.chan@um.edu.my`
+`winkent.ong@um.edu.my` or `cs.chan at um.edu.my`
 
 # License and Copyright
 
