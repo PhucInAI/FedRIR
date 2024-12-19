@@ -25,6 +25,36 @@ To address these limitations, we define feature sensitivity in the evaluation of
 <p align="center"> <img src="images/feature_sensivity.gif" alt="Feature Sensitivity" style="zoom: 50%" />
 <p align="center"> Figure 2: Illustration demonstrating the optimization of feature sensitivity for achieving feature unlearning. </p>
 
+## Getting started
+
+### Preparation
+
+Before executing the project code, please prepare the Python environment according to the `requirement.txt` file. We set up the environment with `python 3.9.12` and `torch 2.0.0`. 
+
+```python
+pip install -r requirement.txt
+```
+
+### How to run
+
+**1. Federated Model Training**
+
+- Default ResNet-18 model for image datasets and a fully-connected neural network linear model for tabular datasets.
+
+```python
+python fl_training_main.py -gpu -train_mode backdoor -dataset Cifar10 -trigger_label 0 -trigger_size 5 -global_epochs 200 -local_epochs 5 -batch_size 128 -lr 0.0001  -client_num 10 -frac 0.4 -momentum 0.5 -optimizer 'sgd' -seed 0 -report_training -save_model 
+```
+
+- Fine-tune hyperparameters make sure model achieves convergence during training
+
+**2. Federated Feature Unlearning and Evaluation**
+
+```python
+python unlearn_main.py -gpu -unlearning_scenario backdoor -dataset Cifar10 -trigger_label 0 -trigger_size 5 -sample_number 20 -min_sigma 0.05 -max_sigma 1.0 -lr 0.00001 -client_num 10 -batch_size 128 -seed 0 -save_model 
+```
+
+- To achieve optimal feature unlearning results, adjust hyperparameters like `lr` and `batch_size`, as they may vary across different unlearning scenarios and datasets.
+
 ## Citation
 If you find this work useful for your research, please cite
 ```bibtex
