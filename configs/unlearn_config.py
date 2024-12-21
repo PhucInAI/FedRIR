@@ -18,10 +18,10 @@ parser.add_argument("-weight_path", type=str,
 parser.add_argument("-hidden_layer_num", type= int,
                     help= "hidden layer number of the linear model for tabular dataset")
 parser.add_argument("-save_model", action='store_true', help= "option to save the unlearned model")
-parser.add_argument("-checkpoint", type= str, default= "./checkpoint", help= "model folder path")
+parser.add_argument("-checkpoint", type= str, help= "model folder path")
 
 # Dataset configuration
-parser.add_argument("-root", type=str, default= "./data")
+parser.add_argument("-root", type=str, help= "data folder path")
 parser.add_argument("-preprocessed_dir", type= str, default= "preprocessed_data")
 parser.add_argument("-dataset", type=str, default= "Cifar10",
                     choices=["MNist", "FMNist","Cifar10", "Cifar20", "Cifar100", "Celeba", "adult", "diabetes"],
