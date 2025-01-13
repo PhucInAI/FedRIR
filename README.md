@@ -16,7 +16,7 @@
 The advent of Federated Learning (FL) highlights the practical necessity for the 'right to be forgotten' for all clients, allowing them to request data deletion from the machine learning model's service provider. This necessity has spurred a growing demand for Federated Unlearning (FU). Existing methods employ the influence function to achieve feature unlearning, which is impractical for FL as it necessitates the participation of other clients in the unlearning process.
 
 <p align="center"> <img src="images/method.png" alt="Methodology" style="zoom: 100%" />
-<p align="center"> Figure 1: Overview of our proposed Federated Feature Unlearning framework. </p>
+<p align="center"> Figure 1: Overview of our proposed Federated Feature Unlearning (Ferrari) framework. </p>
 
 To address these limitations, to the best of our knowledge, this work namely Ferrari is the first work in feature unlearning within FL settings that does not necessitate participation from all other clients. Extensive experimental results and theoretical analysis demonstrate the effectiveness of Ferrari across various feature unlearning scenarios, including sensitive, backdoor, and biased features.
 
