@@ -57,10 +57,10 @@ python unlearn_main.py -gpu -unlearning_scenario backdoor -dataset Cifar10 -trig
 If you find this work useful for your research, please cite
 ```bibtex
 @inproceedings{ferrari,
-               title={Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity}, 
-               author={Hanlin Gu and WinKent Ong and Chee Seng Chan and Lixin Fan},
-               journal={Advances in Neural Information Processing Systems},
-               year={2024},
+    title={Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity}, 
+    author={Hanlin Gu and WinKent Ong and Chee Seng Chan and Lixin Fan},
+    journal={Advances in Neural Information Processing Systems},
+    year={2024},
 }
 ```
 
