@@ -60,6 +60,8 @@ If you find this work useful for your research, please cite
     title={Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity}, 
     author={Hanlin Gu and WinKent Ong and Chee Seng Chan and Lixin Fan},
     journal={Advances in Neural Information Processing Systems},
+    volume={37},
+    pages={24150--24180},
     year={2024},
 }
 ```
